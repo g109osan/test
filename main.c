@@ -14,7 +14,7 @@ int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないと�
 int main(void)
 {
   int i;
-  double *x = (double *)malloc(sizeof(double) * 100);
+  double *x = (double *)malloc(sizeof(double) * 101); // 0~100の配列より101個必要
 
   while( i <= 100 ){
     x[i] = myRoot((double)i);
