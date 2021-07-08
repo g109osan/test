@@ -16,6 +16,7 @@ int main(void)
   int i;
   double *x = (double *)malloc(sizeof(double) * 101); // 0~100の配列より101個必要
 
+  i = 0; //初期値が設定されていない
   while( i <= 100 ){
     x[i] = myRoot((double)i);
     i++;
