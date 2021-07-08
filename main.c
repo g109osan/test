@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>//sqrtを利用するために必要なヘッダーファイル
 #include <stdlib.h>//数値を変換するために必要なヘッダーファイル
-int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
-{
+double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
+{ // 配列の中身は倍精度実数型だからdouble型
   double y; // 配列の中身は倍精度実数型だから
   if( x < 0 ){ // x >= 0 の時の平方根を返すため x = 0 は含まれない
     exit(1);
